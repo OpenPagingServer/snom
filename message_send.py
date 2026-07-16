@@ -1,18 +1,3 @@
-"""
-SNOM message-send runtime.
-
-NOTE: your original message_send.py (the Polycom RTP/PTT version) wasn't
-part of the upload, only the files that imported it. This is a fresh
-implementation written to match the interface page_handler.py and
-index.py call into (debug_log, parse_targets, send_ready_signal,
-handle_api, receive_audio, end_stream), with the Polycom-specific
-"ensure_stream"/"fetch_ptt_targets" audio plumbing replaced by SNOM
-text-popup delivery. If your paging core expects a specific
-send_ready_signal/handle_api wire format, tell me and I'll match it
-exactly - the versions below are reasonable stand-ins, flagged where
-they're a guess.
-"""
-
 import os
 import html
 import json
