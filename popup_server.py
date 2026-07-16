@@ -1,19 +1,3 @@
-"""
-Tiny local HTTP server that hosts generated SnomIPPhoneText XML documents.
-
-Why this exists:
-Snom phones don't accept an XML payload pushed directly in the trigger
-request. The trigger is a GET to the phone's own /minibrowser.htm?url=...
-endpoint, and the phone then turns around and fetches that URL itself
-(see the "HTTP GET (Pull via Push)" delivery mechanism). So we need
-something on our side, reachable by the phones, to serve the XML
-document at a short-lived URL.
-
-This mirrors the icon_server.py pattern used by the original Polycom
-module (referenced in index.py but not part of your upload) - a small
-background HTTP server managed by this module's init()/shutdown().
-"""
-
 import os
 import socket
 import threading
