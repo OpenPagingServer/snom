@@ -17,3 +17,6 @@ Multicast Config:
 4) Enable Multicast Support
 5) Under Zone 1 add in a name, and add in the multicast address you made in open paging server
 
+
+## Demo
+[![Watch the Video](https://img.youtube.com/vi/F06C0dwH6a8/hqdefault.jpg)](https://youtube.com/shorts/F06C0dwH6a8)
